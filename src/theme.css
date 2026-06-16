@@ -1,0 +1,27 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* إضافة تنقل ناعم بين الألوان */
+}
+
+/* الثيم الداكن */
+.App.dark {
+  background-color: #1a1a1a; /* لون أسود مريح للعين بدلاً من الأسود الحاد */
+  color: white;
+}
+
+/* الثيم الوردي */
+.App.pink {
+  background-color: #ffdeeb; /* لون وردي هادئ ومتناسق */
+  color: #c2185b; /* لون خط متناسق مع الخلفية الوردية */
+}
+
+/* ثيم افتراضي إضافي إذا أردت الرجوع للوضع الفاتح */
+.App.light {
+  background-color: #ffffff;
+  color: #2c3e50;
+}
